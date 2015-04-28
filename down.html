@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<!--[if IE]>
+<script type="text/javascript" src="css/js/html5.min.js"></script>
+<![endif]-->
+<title>SHARE MY POSITION</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="css/js/jquery.min.js"></script>
+<script type="text/javascript">
+(function($,h,c){var a=$([]),e=$.resize=$.extend($.resize,{}),i,k="setTimeout",j="resize",d=j+"-special-event",b="delay",f="throttleWindow";e[b]=0;e[f]=true;$.event.special[j]={setup:function(){if(!e[f]&&this[k]){return false}var l=$(this);a=a.add(l);$.data(this,d,{w:l.width(),h:l.height()});if(a.length===1){g()}},teardown:function(){if(!e[f]&&this[k]){return false}var l=$(this);a=a.not(l);l.removeData(d);if(!a.length){clearTimeout(i)}},add:function(l){if(!e[f]&&this[k]){return false}var n;function m(s,o,p){var q=$(this),r=$.data(this,d);r.w=o!==c?o:q.width();r.h=p!==c?p:q.height();n.apply(this,arguments)}if($.isFunction(l)){n=l;return m}else{n=l.handler;l.handler=m}}};function g(){i=h[k](function(){a.each(function(){var n=$(this),m=n.width(),l=n.height(),o=$.data(this,d);if(m!==o.w||l!==o.h){n.trigger(j,[o.w=m,o.h=l])}});g()},e[b])}})(jQuery,this);
+$(document).ready(function() {
+$(".fileList li a").click(function(){
+		$("body").append("<div class='maskA'><div class='tc down'><img src='images/ico/000001A06-50.png' class='bgwh p2 bdd radr5'><p class='p5'>下载文件将花费您 2000 点下载券</p><a href='#' class='btn bluebtn db'><i class='icon-down iconfont f18'></i></i>我要下载</a></div></div>");
+		$(".maskA").click(function(){
+       $(".maskA").remove();
+        })
+		});
+})
+</script>
+</head>
+<body>
+<header class="bgl"> <a href="javascript:history.go(-1)" class="iconfont abs abtn M-left cb f18" style="left:0"></a>
+  <div class="h38 lh38 cb f18 pl38 tc"><span class="logo">天狮云空间</span></div>
+</header>
+<article class="p20" id="content">
+  <div class="maskB"></div>
+  <div>
+    <div class="jindu">
+      <div class="jindu2" style="width:30%"></div>
+      <div class="rel">剩余：113M</div>
+    </div>
+  </div>
+  <div class="tr">387MB / 500MB</div>
+  <div class="pb10 mb10 fileList">
+    <div class="line pb10 mb10 rel">排序规则:
+    <div class="select">
+      <select id="u68_input" jQuery17107032784083198775="241">
+        <OPTION selected value=" 按名称">按名称</OPTION>
+        <OPTION value=" 按上传时间">按上传时间</OPTION>
+        <OPTION value=" 按类别">按类别</OPTION>
+      </select>
+   </div>
+      <div class="abs t5 r0">我的点券：<span class="b green">21547</span></div>
+    </div>
+    <ul>
+      <li><a href="javascript:void(0)"><img src="images/ico/0000011P3-45.png" alt=""><span class="mb5 btn greenbtn db p2 f">2000点</span>天狮集团圣诞新年祝福</a></li>
+      <li><a href="javascript:void(0)"><img src="images/ico/0000011P3-45.png" alt=""><span class="mb5 btn greenbtn db p2">1200点</span>法国尼斯推介片(20140815)</a></li>
+      <li><a href="javascript:void(0)"><img src="images/ico/0000011P3-45.png" alt=""><span class="mb5 btn bluebtn db p2">已获取</span>天狮集团20周年庆典推介片（20140815）</a></li>
+      <li><a href="javascript:void(0)"><img src="images/ico/0000011P3-45.png" alt=""><span class="mb5 btn greenbtn db p2">500点</span>2014年天狮大事记</a></li>
+      <li><a href="javascript:void(0)"><img src="images/ico/0000011P3-45.png" alt=""><span class="mb5 btn greenbtn db p2">400点</span>专心专注做好钙 全心全意传递爱</a></li>
+      <li><a href="javascript:void(0)"><img src="images/ico/0000011P3-45.png" alt=""><span class="mb5 btn greenbtn db p2">200点</span>荣耀东方 再创辉煌--天狮香港开业嘉年华（花絮）</a></li>
+      <li><a href="javascript:void(0)"><img src="images/ico/0000011P3-45.png" alt=""><span class="mb5 btn greenbtn db p2">100点</span>2014下半年新品秀—背景视频</a></li>
+      <li><a href="javascript:void(0)"><img src="images/ico/0000011149-43.png" alt=""><span class="mb5 btn bluebtn db p2">已获取</span>【听培训】天狮磷虾油（王大平高级经理）</a></li>
+      <li><a href="javascript:void(0)"><img src="images/ico/0000011149-43.png" alt=""><span class="mb5 btn bluebtn db p2">已获取</span>【听培训】2015年中国区业务启动大会—李金元董事长致辞</a></li>
+      <li><a href="javascript:void(0)"><img src="images/ico/0000011149-43.png" alt=""><span class="mb5 btn greenbtn db p2">100点</span>【听培训】天狮宜首康多功能保健仪（王川老师）</a></li>
+      <li><a href="javascript:void(0)"><img src="images/ico/0000011149-43.png" alt=""><span class="mb5 btn greenbtn db p2">200点</span>【听培训】2015年中国区业务启动大会—张奇志副总裁致辞</a></li>
+      <li><a href="javascript:void(0)"><img src="images/ico/0000011149-43.png" alt=""><span class="mb5 btn greenbtn db p2">10点</span>【听培训】2015年中国区业务启动大会分享篇—李荣艳分享</a></li>
+    </ul>
+    <div class="ovh"><a href="javascript:void(0)" class="btn bluebtn db" id="viewMap">点击加载更多</a></div>
+  </div>
+</article>
+<footer id="footer" class="fix inline_box">
+  <div id="butten1" class="inline_four naf"><a href="myspace.html" class="f14"><strong>我的云空间</strong></a></div>
+  <div id="butten2" class="inline_four naf sel"><a href="down.html" class="f14"><strong>下载频道</strong></a></span></div>
+  <div id="butten2" class="inline_four naf"><a href="up.html" class="f14"><strong>上传文件</strong></a></div>
+  <div id="butten2" class="inline_four naf"><a href="krju.html" class="no f14"><strong>购买点券</strong></a></span></div>
+</footer>
+</body>
+</html>

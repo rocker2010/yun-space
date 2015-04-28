@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<!--[if IE]>
+<script type="text/javascript" src="css/js/html5.min.js"></script>
+<![endif]-->
+<title>SHARE MY POSITION</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="css/js/jquery.min.js"></script>
+<script type="text/javascript">
+ (function($,h,c){var a=$([]),e=$.resize=$.extend($.resize,{}),i,k="setTimeout",j="resize",d=j+"-special-event",b="delay",f="throttleWindow";e[b]=0;e[f]=true;$.event.special[j]={setup:function(){if(!e[f]&&this[k]){return false}var l=$(this);a=a.add(l);$.data(this,d,{w:l.width(),h:l.height()});if(a.length===1){g()}},teardown:function(){if(!e[f]&&this[k]){return false}var l=$(this);a=a.not(l);l.removeData(d);if(!a.length){clearTimeout(i)}},add:function(l){if(!e[f]&&this[k]){return false}var n;function m(s,o,p){var q=$(this),r=$.data(this,d);r.w=o!==c?o:q.width();r.h=p!==c?p:q.height();n.apply(this,arguments)}if($.isFunction(l)){n=l;return m}else{n=l.handler;l.handler=m}}};function g(){i=h[k](function(){a.each(function(){var n=$(this),m=n.width(),l=n.height(),o=$.data(this,d);if(m!==o.w||l!==o.h){n.trigger(j,[o.w=m,o.h=l])}});g()},e[b])}})(jQuery,this);
+$(document).ready(function() {
+	$("#listM").click(function(){
+		$(".navMenuClass").slideToggle();
+		});
+	$("#share").click(function(){
+		$("body").append("<div class='maskA'><div><img src='css/images/jiantou.png' height='170'></div></div>");
+		$(".maskA").click(function(){
+       $(".maskA").remove();
+        })
+		});
+	$("#price a").click(function(){
+		$("#price").find("span.sel").removeClass("sel");
+		$(this).find("span").toggleClass("sel");
+		})
+	$("#price2 a").click(function(){
+		$("#price2").find("span.sel").removeClass("sel");
+		$(this).find("span").toggleClass("sel");
+		})
+		
+})
+</script>
+</head>
+<body>
+<header class="bgl">
+<a href="javascript:history.go(-1)" class="iconfont abs abtn M-left cb f18" style="left:0"></a>
+<div class="h38 lh38 cb f18 pl38 tc"><span class="logo">天狮云空间</span></div>
+</header>
+
+<article class="p20" id="content">
+  <div class="maskB"></div>
+ <div><div class="jindu"><div class="jindu2" style="width:30%"></div><div class="rel">剩余：113M</div></div></div>
+<div class="tr">387MB / 500MB</div>
+<div class="mt20">
+<p class="mb20">一元购买1000点天狮文宣下载劵，即可获赠1枚天狮金币。（注：文宣下载劵购买成功后自动计入账户余额，不可退换。）</p>
+<h1 class="f14 mb5">选择金额：</h1>
+<div class="inline_box mb10 f0" id="price">
+<a href="#" class="inline_four"><span class="tc note2 jg db f13">5元</span></a>
+<a href="#" class="inline_four"><span class="tc note2 jg db f13 sel">10元</span></a>
+<a href="#" class="inline_four"><span class="tc note2 jg db f13">20元</span></a>
+<a href="#" class="inline_four"><span class="tc note2 jg db f13">50元</span></a>
+<a href="#" class="inline_four"><span class="tc note2 jg db f13">100元</span></a>
+<div class="inline_two"><span class="note2 db tc jg cb f14">其他金额:<input type="text" value="10" size="5" class="tc"></span></div>
+</div>
+<h1 class="mb5 f14">选择支付方式：</h1>
+<div class="inline_box mb10 f0"  id="price2">
+<a href="#" class="inline_two"><span class="note2 db tc jg cb sel f14">卓越卡支付</span></a>
+<a href="#" class="inline_two"><span class="note2 db tc jg cb f14">微信支付</span></a>
+</div>
+<a href="kr.html" class="btn bluebtn db mt20 mb20" id="viewMap">立即购买</a>
+</div>
+</article>
+<footer id="footer" class="fix inline_box">
+  <div id="butten1" class="inline_four naf"><a href="myspace.html" class="f14"><strong>我的云空间</strong></a></div>
+  <div id="butten2" class="inline_four naf"><a href="down.html" class="f14"><strong>下载频道</strong></a></span></div>
+  <div id="butten2" class="inline_four naf"><a href="up.html" class="f14"><strong>上传文件</strong></a></div>
+  <div id="butten2" class="inline_four naf sel"><a href="krju.html" class="no f14"><strong>购买点券</strong></a></span></div>
+</footer>
+</body>
+</html>

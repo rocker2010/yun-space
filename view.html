@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<!--[if IE]>
+<script type="text/javascript" src="css/js/html5.min.js"></script>
+<![endif]-->
+<title>SHARE MY POSITION</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="css/js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$("#share").click(function(){
+		$("body").append("<div class='maskA tr'><img src='css/images/jiantou.png' alt='' width='261'></div>");
+		$(".maskA").click(function(){
+       $(".maskA").remove();
+        })
+		});
+
+})
+</script>
+</head>
+<body>
+<header class="bgl"> <a href="javascript:history.go(-1)" class="iconfont abs abtn M-left cb f18" style="left:0"></a>
+  <div class="h38 lh38 cb f18 pl38 tc"><span class="logo">天狮云空间</span></div>
+</header>
+<article class="p20" id="content">
+  <div class="maskB"></div>
+  <div>
+    <div class="jindu">
+      <div class="jindu2" style="width:30%"></div>
+      <div class="rel">剩余：113M</div>
+    </div>
+  </div>
+  <div class="tr">387MB / 500MB</div>
+  <div class='tc down'>
+    <div class=""><img src='images/ico/000001A06-50.png' class="bgwh p2 bdd radr5 mb10"></div>
+    <a href='#' class='btn bluebtn db'  id="filedown"><i class='icon-down iconfont f18'></i>下载</a>
+    <p class="mb20">请点击右上角的按钮,选择"在浏览器中打开" 本页，点击下载。</p>
+    <a href='#' class='btn bluebtn db' id="share"><i class='icon-fx iconfont f18'></i>分享</a></div>
+</article>
+<footer id="footer" class="fix inline_box">
+  <div id="butten1" class="inline_four naf"><a href="myspace.html" class="f14"><strong>我的云空间</strong></a></div>
+  <div id="butten2" class="sel inline_four naf"><a href="down.html" class="f14"><strong>下载频道</strong></a></div>
+  <div id="butten2" class="inline_four naf"><a href="up.html" class="f14"><strong>上传文件</strong></a></div>
+  <div id="butten2" class="inline_four naf"><a href="krju.html" class="no f14"><strong>扩容记录</strong></a></div>
+</footer>
+</body>
+</html>
